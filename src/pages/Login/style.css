@@ -25,6 +25,7 @@
     color: rgb(63, 63, 63);
     background-color: rgb(245, 244, 244);
     box-shadow:  1.5px 1.5px 2px 1px #0000001a;
+    -webkit-box-shadow: 1.5px 1.5px 2px 1px #0000001a;
     /* -webkit-box-shadow: 1.5px 1.5px 2px 1px #0000001a, 0 0 0 30px rgb(245, 245, 245) inset !important; */
     border-radius: 0.2rem;
     padding-left: 0.3rem;
