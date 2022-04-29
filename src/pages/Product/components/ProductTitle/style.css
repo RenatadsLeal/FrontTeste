@@ -1,0 +1,43 @@
+#productTitle {
+    display: flex;
+    color: #f7f5f5;
+    background: #001122;
+    margin-top: 3.4rem;
+    overflow: hidden;
+    background: var(--secondary-color);
+    padding-left: 1rem;
+}
+
+#informationsTitle {
+    padding: 0.5rem 1rem;
+}
+
+#previousButton {
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#previousButton:hover svg {
+    opacity: 50%;
+}
+
+#informationsTitle p {
+    font-weight: 600;
+    margin: 0;
+}
+
+/* #informationsTitle p, #informationsTitle h3 {
+    margin: 0;
+} */
+
+#informationsTitle h3 {
+    font-weight: 700;
+    margin: 0;
+}
+
+@media only screen and (min-width: 767px) {
+    #productTitle {
+        padding-left: 2rem;
+    }
+}

@@ -1,0 +1,104 @@
+.bg-dark  {
+    background-color: #001122 !important;
+}
+
+#logo {
+    width: 2rem;
+}
+
+.navbar-brand {
+    margin-right: 0.5rem;
+}
+
+#brand h2 {
+    margin: 0;
+}
+
+#moto {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 2.284rem;
+}
+
+#moto p {
+    margin-bottom: -12%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#motoHighlight {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.access {
+    color: rgba(255, 255, 255, 0.92);
+    border: none;
+    font-size: 1rem;
+    background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(49, 138, 138, 0)
+    ),
+    linear-gradient(
+      to right,
+      #f49a50,
+      var(--primary-color),
+      #001e3c
+  );
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.access:hover {
+    color: black;
+    background-size: 0 2px, 100% 2px;
+}
+.logout {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0);
+    font-weight: 600;
+}
+
+#avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.greeting{
+    font-weight: 600;
+}
+
+#separator {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.noPointer:hover {
+    cursor: default;
+}

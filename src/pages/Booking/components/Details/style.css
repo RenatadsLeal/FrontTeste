@@ -1,0 +1,191 @@
+#bookingDetails {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem #b8b8b8;
+    overflow: hidden;
+    height: auto;
+}
+
+#summaryImage h4 {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+#summaryImage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 22rem;
+}
+
+#summary {
+    padding: 0.5rem 1rem 1rem
+}
+
+#summary p {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+}
+
+#summary h5{
+    font-weight: 600;
+    margin: 0;
+}
+
+#summary .ratingButton{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#summary .location {
+    display: flex;
+    border-bottom: 1px var(--primary-color) solid;
+    padding-bottom: 1rem;
+}
+
+#summary .location svg {
+    padding: 0.2rem 0.3rem 0 0;
+}
+
+.checkIn, .checkOut {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px var(--primary-color) solid;
+    padding: 0.5rem 0;
+}
+
+#summary button {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background: var(--primary-color);
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+#summary button:hover {
+    opacity: 0.9;
+}
+
+@media only screen and (min-width: 600px) {  
+    #bookingDetails {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #summaryImage img {
+        height: 15.5rem;
+    }
+
+    #summary {
+        padding: 2.5rem 1rem 1rem;
+    }
+}
+
+ @media only screen and (min-width: 1200px) {    
+    #bookingDetails {
+        /* grid-column: 2; comentamos pq achamos q nao tah fazendo nada*/
+        grid-template-columns: 1fr;
+    }
+
+    #summaryImage img {
+        height: auto;
+        /* max-height: 471.02px; */
+    }
+
+    #summary {
+        padding: 0.5rem 1rem 1rem;
+    }
+
+    #summaryImage h4 {
+        padding: 1rem 1rem;
+    }
+
+    #summary h5{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    #summary .location {
+        padding-top: 0.8rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .checkIn, .checkOut {
+        padding: 1.3rem 0;
+    }
+
+    #summary button {
+        margin-top: 4rem;
+        font-weight: 600;
+    }
+}
+
+    @media only screen and (min-width: 1400px) {
+    #summary .location {
+        padding-top: 0.8rem;
+        padding-bottom: 2rem;
+    }
+
+    .checkIn, .checkOut {
+        padding: 1.2rem 0;
+    }
+
+    #summary button {
+        margin-top: 3rem;
+    }
+    }
+
+    @media only screen and (min-width: 1650px) {
+        #summary .location {
+            padding-top: 0.6rem;
+            padding-bottom: 1.6rem;
+        }
+        .checkIn, .checkOut {
+            padding: 0.9rem 0;
+        }
+        #summary button {
+            margin-top: 2.6rem;
+        }
+    }
+
+    @media only screen and (min-width: 1900px) {
+        #summary .location {
+            padding-top: 0.6rem;
+            padding-bottom: 1rem;
+        }
+        .checkIn, .checkOut {
+            padding: 1rem 0;
+        }
+        #summary button {
+            margin-top: 2.5rem;
+        }
+    }
+
+    @media only screen and (min-width: 2100px) {
+        /* #summary h5{
+            font-size: 1.3rem;
+            font-weight: 700;
+        } */
+
+        #summary .location {
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+        }
+        .checkIn, .checkOut {
+            padding: 1rem 0;
+        }
+        #summary button {
+            margin-top: 2.5rem;
+        }
+/* 
+        #bookingDetails {
+            align-content: center;
+        } */
+    }

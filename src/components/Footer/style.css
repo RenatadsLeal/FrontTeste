@@ -1,0 +1,53 @@
+#footerWave {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0; */
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+#footerWave svg {
+    display: block;
+}
+
+/* path {
+    fill: var(--secondary-color);
+    stroke: var(--secondary-color);
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  } */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 0.3rem 1rem 0.5rem;
+    color: white;
+}
+
+#footerII {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 13px;
+}
+
+#footerIII {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#footerIII img{
+    width: 1.8rem;
+}
+
+.icons {
+    color: white;
+}

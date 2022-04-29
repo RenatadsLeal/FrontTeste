@@ -1,0 +1,226 @@
+#search {
+    background: #001122;
+    margin-top: 3.4rem;
+    overflow: hidden;
+    background: var(--secondary-color);
+}
+
+.location input {
+    background-image: url('./location-dot-solid.svg');
+    /* background-size:contain !important; */
+    background-size: 0.9rem;
+    background-repeat: no-repeat;
+    text-indent: 1.3rem;
+    background-position: 1.5% 50%;
+}
+
+.location .downshift-dropdown {
+    left: 1rem;
+    right: 1rem;
+}
+
+#searchBrowserTitle {
+    display: flex;
+    justify-content: center;
+    color: #f7f5f5;
+    text-shadow: 5px 5px 5px #222;
+    padding: 0.2rem 1rem 1rem;
+}
+
+.formSearch {
+    display: grid;
+    grid-template-areas:
+        "location"
+        "date"
+        "buttonSearch";
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    padding: 1rem;
+    background-color: #eeeeeea1;
+}
+
+.formSearch input {
+    width: 100%;
+    height: 2rem;
+    padding-left: 0.3rem;
+    border: none;
+    color: rgb(142, 142, 142);
+    border-radius: 0.2rem;
+}
+
+#search input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(255, 255, 255) inset !important;
+}
+
+.location {
+    grid-area: location;
+}
+
+.date {
+    grid-area: date;
+}
+
+.date input {
+    background-image: url('./calendar-days-solid.svg') !important;
+    background-size: 0.9rem;
+    background-repeat: no-repeat !important;
+    text-indent: 1.3rem !important;
+    background-position: 2% 50%;
+}
+
+.buttonSearch {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.2rem;
+    border: none;
+    background: var(--primary-color);
+    font-size: 0.95rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    grid-area: buttonSearch;
+    font-weight: 600;
+}
+
+.buttonSearch:hover {
+    opacity: 0.9;
+}
+
+.react-datepicker {
+    border: none;
+    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+.react-datepicker__header {
+    background-color: rgb(251, 251, 251);
+    border-bottom: 1px solid #ffffff;
+    padding: 0.3rem 0;
+    font-size: 0.7rem;
+}
+
+.react-datepicker__navigation-icon::before {
+    top: 0.8rem;
+}
+
+.react-datepicker-popper[data-placement^=bottom] {
+    padding-top: 0.15rem;
+    ;
+}
+
+.react-datepicker__current-month {
+    text-align: left;
+    color: rgb(78, 76, 76);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.4rem 1.8rem;
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+    margin: 0.07rem;
+}
+
+.react-datepicker__day-name {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--in-range {
+    border-radius: 0.3rem;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+@media only screen and (min-width: 350px) {
+    .formSearch {
+        grid-template-areas:
+            "location location location"
+            "date date buttonSearch";
+    }
+
+    .buttonSearch {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .formSearch {
+        grid-template-areas: "location date buttonSearch";
+    }
+
+    .buttonSearch {
+        width: 100%;
+    }
+
+    .location .downshift-dropdown {
+        left: auto;
+        right: auto;
+        width: 14.5rem;
+    }
+}
+
+@media (min-width: 650px) {
+
+    .location .downshift-dropdown {
+        width: 15rem;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .location .downshift-dropdown {
+        width: 16.5rem;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    #search {
+        padding: 0rem 1rem 0;
+    }
+
+    .formSearch {
+        grid-template-areas: "location location date date buttonSearch";
+        justify-content: center;
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+    }
+
+    .buttonSearch {
+        width: 8rem;
+    }
+
+    .formSearch input {
+        width: 17rem;
+    }
+
+    .location .downshift-dropdown {
+        width: 17rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #search {
+        padding: 0rem 3rem 0;
+    }
+
+    .formSearch {
+        grid-template-areas: "location location date date buttonSearch";
+        justify-content: center;
+    }
+
+    .buttonSearch {
+        width: 8rem;
+    }
+
+    .formSearch input {
+        width: 20rem;
+    }
+
+    .location .downshift-dropdown {
+        width: 20rem;
+    }
+}

@@ -1,0 +1,28 @@
+#warning {
+    display: flex;
+    background: rgb(252, 224, 224);
+    border-radius: 0.4rem;
+    align-items: center;
+    height: 3rem;
+    width: 17rem;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+    padding: 0.6rem;
+    /* justify-content: space-around; */
+}
+
+#warning p {
+    margin: 0;
+    font-size: 0.94rem;
+}
+
+.warningIcon {
+    color: rgb(199, 19, 19);
+}
+
+
+@media only screen and (min-width: 1600px) {
+    #warning {
+        width: 20rem;
+    }
+}

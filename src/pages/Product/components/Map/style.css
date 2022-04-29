@@ -1,0 +1,12 @@
+/* .mapFrame {
+    width: 100%;
+} */
+
+.frame {
+    padding: 2rem;
+}
+
+#mapTitle {
+    border-bottom: 1px solid var(--primary-color);
+    padding: 1rem 2rem 0.5rem;
+}

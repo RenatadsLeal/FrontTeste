@@ -1,0 +1,124 @@
+ /* #bookingWrapper h4{
+    padding-left: 0.5rem;
+} */
+
+#bookingContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#bookingWrapperTitle {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+#bookingInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0.3rem;
+    column-gap: 3rem;
+    row-gap: 2rem;
+}
+
+#leftColumn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+#calendarAvailabilityBooking {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    /* width: 100%; */
+    /* width: fit-content; */
+    justify-items: center;
+    padding: 0.5rem;
+    /* padding: 2rem 1rem; */
+    box-shadow: 0 0.5rem 1rem #b8b8b8;
+    border-radius: 0.5rem;
+    /* margin: 0; */
+}
+
+/* @media only screen and (min-width: 300px) {
+    #calendarAvailabilityBooking {
+        width: 100%;
+    }
+} */
+
+@media only screen and (min-width: 376px) {
+    #bookingInfo{
+        margin: 1rem;
+    }
+
+    #bookingWrapperTitle {
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #bookingInfo{
+        margin: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    /* #calendarAvailabilityBooking .react-datepicker__header {
+        padding: 0.8rem;
+        font-size: 1rem;
+    } */
+    #calendarAvailabilityBooking .react-datepicker__navigation-icon::before {
+        top: 1rem;
+    }
+    #calendarAvailabilityBooking .react-datepicker__current-month {
+        font-size: 1rem;
+    }
+    /* #calendarAvailabilityBooking .react-datepicker__day, .react-datepicker__day-name {
+        margin: 0.4rem;
+        font-size: 1rem;
+    } */
+}
+
+@media only screen and (min-width: 1200px) {
+    #bookingInfo {
+        grid-template-columns: 2fr 1fr;
+        margin: 0.5rem 2rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    #bookingWrapperTitle {
+        padding-left: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #bookingInfo {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* @media only screen and (min-width: 1500px) {
+    #bookingInfo {
+        grid-template-columns: 1fr 1fr;
+    }
+} */
+
+@media only screen and (min-width: 1800px) {
+    #bookingInfo {
+        grid-template-columns: 2fr 1fr;
+    }
+
+        /* #bookingWrapper {
+        width: 110rem;
+        align-self: center;
+    } */
+}
+
+@media only screen and (min-width: 2000px) {
+    #bookingWrapper {
+        width: 110rem;
+        align-self: center;
+    }
+}

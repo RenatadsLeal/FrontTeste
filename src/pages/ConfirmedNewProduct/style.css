@@ -1,0 +1,64 @@
+#confirmedNewProductWrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirmedNewProduct {
+    width: 80%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem #b8b8b8;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+#confirmedNewProduct h3 {
+    font-weight: 600;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+}
+
+#confirmedNewProduct h5 {
+    font-size: 1rem;
+}
+
+.checkIcon {
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.confirmBtn {
+    /* margin: 1rem; */
+    width: 10rem;
+    height: 2.2rem;
+    border-radius: 0.2rem;
+    border: none;
+    background: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.confirmBtn:hover {
+    opacity: 0.9;
+}
+
+@media only screen and (min-width: 600px) {
+    #confirmedNewProduct {
+        width: 32rem;
+    }
+
+    .confirmBtn {
+        margin: 1rem;
+    }
+
+    #confirmedNewProduct h5 {
+        font-size: 1.4rem;
+    }
+}

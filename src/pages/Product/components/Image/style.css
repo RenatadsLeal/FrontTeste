@@ -1,0 +1,272 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.modal-content {
+    border: none;
+    border-radius: 0;
+}
+
+.modal-header {
+    border: none;
+    margin-bottom: -3rem;
+    z-index: 1;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.image-gallery-index {
+    top: unset;
+    bottom: 0;
+    text-align: center;
+    line-height: 1;
+    z-index: 0;
+}
+
+.image-gallery-left-nav:hover,
+.image-gallery-right-nav:hover,
+.image-gallery-svg:hover {
+    color: white;
+    opacity: 70%;
+}
+
+.image-gallery-slide .image-gallery-image {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-gallery-fullscreen-button {
+    padding: 0 1rem 2.5rem 0;
+}
+
+.image-gallery-content.fullscreen .image-gallery-fullscreen-button {
+    padding: 0 1rem 1rem 0;
+}
+
+.image-gallery-content.fullscreen .image-gallery-index {
+    position: absolute;
+    background-color: rgb(162, 156, 156);
+    line-height: 0.5;
+    z-index: 0;
+    top: 0;
+    bottom: inherit;
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+}
+
+@media only screen and (min-width: 425px) {
+    .image-gallery-slide .image-gallery-image {
+        height: 22rem;
+    }
+}
+
+@media only screen and (min-width: 625px) {
+    .image-gallery-slide .image-gallery-image {
+        height: 27rem;
+    }
+}
+
+@media only screen and (min-width: 825px) {
+    #galleryThumbnail {
+        display: grid;
+        grid-template-areas:
+            "thumbnailProduct1 thumbnailProduct1 thumbnailProduct2 thumbnailProduct3"
+            "thumbnailProduct1 thumbnailProduct1 thumbnailProduct4 thumbnailProduct5";
+        padding: 1rem 2rem;
+        column-gap: 0.3rem;
+        row-gap: 0.3rem;
+        position: relative;
+    }
+
+    .thumbnailProduct1 {
+        grid-area: thumbnailProduct1;
+        height: 19.4rem;
+    }
+
+    .thumbnailProduct2 {
+        grid-area: thumbnailProduct2;
+        height: 9.5rem;
+    }
+
+    .thumbnailProduct3 {
+        grid-area: thumbnailProduct3;
+        height: 9.5rem;
+    }
+
+    .thumbnailProduct4 {
+        grid-area: thumbnailProduct4;
+        height: 9.5rem;
+    }
+
+    .thumbnailProduct5 {
+        grid-area: thumbnailProduct5;
+        height: 9.5rem;
+    }
+
+    .thumbnailImage {
+        height: 100%;
+        width: 100%;
+        border-radius: 0.5rem;
+        object-fit: cover;
+    }
+
+    #galleryModal {
+        display: flex;
+        justify-content: right;
+        padding-right: 2rem;
+        z-index: 1;
+    }
+
+    .modalButton {
+        width: 7rem;
+        height: 1.5rem;
+        border-radius: 0.2rem;
+        border: none;
+        background-color: transparent;
+        font-weight: 500;
+        color: #f7f5f5;
+        text-shadow: 5px 5px 5px #222;
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        right: 2rem;
+        bottom: 1.7rem;
+    }
+
+    .modalButton:hover {
+        opacity: 50%;
+    }
+
+    .modal-content {
+        border: none;
+        border-radius: 0;
+    }
+
+    .modal-header {
+        border: none;
+        margin-bottom: -3rem;
+        z-index: 1;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .image-gallery-index {
+        position: relative;
+        color: var(--secondary-color);
+        background-color: transparent;
+        text-align: center;
+        line-height: 0;
+        padding-top: 1rem;
+    }
+
+    .image-gallery-left-nav:hover,
+    .image-gallery-right-nav:hover,
+    .image-gallery-svg:hover {
+        color: white;
+        opacity: 70%;
+    }
+
+    .image-gallery-image,
+    .image-gallery-thumbnail-image {
+        object-fit: cover;
+    }
+
+    .image-gallery-thumbnail-image {
+        border-radius: 0.2rem;
+        height: 4rem;
+    }
+
+    .image-gallery-image {
+        width: auto;
+    }
+
+    .image-gallery-content.bottom.fullscreen .image-gallery-slide-wrapper.bottom .image-gallery-swipe .image-gallery-slides .image-gallery-slide .image-gallery-image {
+        height: 38rem;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .thumbnailProduct1 {
+        height: 23.3rem;
+    }
+
+    .thumbnailProduct2 {
+        height: 11.5rem;
+    }
+
+    .thumbnailProduct3 {
+        height: 11.5rem;
+    }
+
+    .thumbnailProduct4 {
+        height: 11.5rem;
+    }
+
+    .thumbnailProduct5 {
+        height: 11.5rem;
+    }
+
+    .image-gallery-content.bottom.fullscreen .image-gallery-slide-wrapper.bottom .image-gallery-swipe .image-gallery-slides .image-gallery-slide .image-gallery-image {
+        height: 50rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .thumbnailProduct1 {
+        height: 27.3rem;
+    }
+
+    .thumbnailProduct2 {
+        height: 13.5rem;
+    }
+
+    .thumbnailProduct3 {
+        height: 13.5rem;
+    }
+
+    .thumbnailProduct4 {
+        height: 13.5rem;
+    }
+
+    .thumbnailProduct5 {
+        height: 13.5rem;
+    }
+
+    .image-gallery-content.bottom.fullscreen .image-gallery-slide-wrapper.bottom .image-gallery-swipe .image-gallery-slides .image-gallery-slide .image-gallery-image {
+        height: 60rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .image-gallery-content.bottom.fullscreen .image-gallery-slide-wrapper.bottom .image-gallery-swipe .image-gallery-slides .image-gallery-slide .image-gallery-image {
+        height: initial;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    .thumbnailProduct1 {
+        height: 35.3rem;
+    }
+
+    .thumbnailProduct2 {
+        height: 17.5rem;
+    }
+
+    .thumbnailProduct3 {
+        height: 17.5rem;
+    }
+
+    .thumbnailProduct4 {
+        height: 17.5rem;
+    }
+
+    .thumbnailProduct5 {
+        height: 17.5rem;
+    }
+
+
+}

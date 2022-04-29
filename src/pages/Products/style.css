@@ -1,0 +1,35 @@
+#products {
+    margin: 2rem 1rem 5rem;
+}
+
+#productsTitle {
+    display: flex;
+    margin-top: 3.4rem;
+    color: #f7f5f5;
+    background: #001122;
+    overflow: hidden;
+    background: var(--secondary-color);
+    padding-left: 1rem;
+}
+
+#homeButton {
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    height: 100%;
+}
+
+#categorydDescription {
+    margin: 1rem 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 760px) {
+    #products {
+        margin: 2rem 3rem 5rem;
+    }
+
+    #categorydDescription {
+        /* margin: 1rem 2rem 2rem; */
+    }
+}

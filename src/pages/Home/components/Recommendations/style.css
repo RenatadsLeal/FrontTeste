@@ -1,0 +1,221 @@
+#recommendations {
+    margin: 2rem 1rem 5rem;
+}
+
+#recommendations h3 {
+    font-weight: 600;
+}
+
+#recommendationsList {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.recommendation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem #b8b8b8;
+    overflow: hidden;
+    height: 40rem;
+}
+
+.recommendation img {
+    width: 100%;
+    /* height: 18rem; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.recommendation p {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.recommendationInfo {
+    position: relative;
+    margin: 1rem;
+}
+
+.recommendationInfo h4{
+    font-weight: 600;
+}
+
+.recommendationTitle {
+    display: flex;
+}
+
+.recommendationTitle p {
+    margin: 0 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+
+.productInfo .grade { 
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.productInfo .grade p {
+    margin: 0 0 0 0.3rem;
+    font-size: 0.9rem;
+} 
+
+.productInfo .grade h6{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: var(--secondary-color);
+    height: 1.2rem;
+    width: 2rem;
+    border-radius: 0.4rem;
+    margin: 0;
+}
+
+.recommendationInfo .location {
+    display: flex;
+    align-items: center;
+}
+
+.recommendationInfo .location p {
+    margin: 0 0.3rem;
+}
+
+.recommendationInfo .characteristics {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.recommendationInfo .characteristics .fa-lg {
+    font-size: 1rem;
+}
+
+.recommendationInfo .charIcons {
+    color: var(--primary-color);
+}
+
+.recommendationInfo button {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background: var(--primary-color);
+    font-weight: 500;
+    position:absolute;
+    bottom: 0;
+}
+
+.recommendationInfo button:hover {
+    opacity: 0.9;
+}
+
+.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-size: 0.9rem;
+    margin-top: 0.5rem
+}
+
+@media only screen and (min-width: 500px) {
+    .recommendation {
+        height: 43rem;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .recommendation {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 19rem;
+    }
+
+    .recommendation img {
+        height: 19rem;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    #recommendations {
+        margin: 2rem 3rem 5rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .productInfo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .recommendationTitle {
+        display: flex;
+    }
+    
+    .recommendationTitle p {
+        margin: 0;
+    }
+    
+    .productInfo .grade { 
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0.5rem;
+    }
+
+    .recommendationInfo .characteristics {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #recommendationsList {
+        grid-template-columns: 1fr 1fr;
+    }
+    #recommendations {
+        margin: 2rem 5rem 5rem;
+    }
+
+    .productInfo {
+        display: grid;
+        justify-content: start;
+    }
+
+    .productInfo .grade { 
+        flex-direction: row;
+        padding: 0 0 0.5rem 0;
+    }
+
+    .recommendationTitle p {
+        margin: 0 0.3rem 0 0;
+    }
+ 
+}
+
+@media only screen and (min-width: 2200px) {
+    .productInfo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .recommendationTitle {
+        display: flex;
+    }
+    
+    .recommendationTitle p {
+        margin: 0;
+    }
+    
+    .productInfo .grade { 
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0.5rem;
+    }
+}

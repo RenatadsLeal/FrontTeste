@@ -1,0 +1,89 @@
+.availableDates {
+    padding: 1rem;
+    background-color: #eeeeeea1;
+}
+
+.calendarSelection {
+    padding: 1.5rem 0 0.2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    justify-items: center;
+}
+
+.selection {
+    width: 100%;
+    padding: 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 0.3rem;
+}
+
+.selection p {
+    margin: 0;
+}
+
+.selection button {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.2rem;
+    border: none;
+    background: var(--primary-color);
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.selection button:hover {
+    opacity: 0.9;
+}
+
+@media only screen and (min-width: 440px) {
+    .selection {
+        padding: 1rem 4rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .calendarSelection {
+        padding: 1.5rem 0;
+    }
+
+    .selection {
+        flex-direction: row;
+        padding: 1rem 6rem 1rem;
+    }
+
+    .selection a {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 870px) {
+    .selection {
+        flex-direction: row;
+        padding: 1rem 10rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    .selection {
+        flex-direction: row;
+        padding: 1rem 14.5rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .calendarSelection {
+        grid-template-columns: 2fr 1fr;
+    }
+    .selection {
+        flex-direction: column;
+        padding: 1rem 2rem 1rem;
+        margin-right: 2rem;
+    }
+}
